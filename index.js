@@ -8,7 +8,7 @@ app.use('/Images', express.static(path.join(__dirname, 'Images')));
 
 // Route for the homepage
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'main.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(3000, () => {
