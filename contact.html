@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - BuggyCoders</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="Images/BuggyCoders.png" alt="Logo" class="logo-image"> Buggy Coders</a>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="heard-about">How did you hear about us?</label>
+        <select id="heard-about" name="heard-about" required>
+          <option value="social-media">Social Media</option>
+          <option value="friend">Friend</option>
+          <option value="search-engine">Search Engine</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button type="submit" class="main-button">Submit</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-title">Copyrights © 2023 <span><a href="#">BuggyCoders.</a></span> All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
