@@ -156,6 +156,32 @@ section {
 }
 
 
+.card .icon {
+  font-size: 3rem;
+  color: #007acc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 10px;
+
+}
+
+
+.card .icon span {
+  font-size: 2rem; 
+  color: #007acc; 
+}
+
+.card .icon i {
+  transition: transform 0.3s ease;
+}
+
+.card .icon i:hover {
+  transform: scale(1.2); 
+}
+
+
 .card a {
   text-decoration: none;
   color: inherit;
@@ -493,4 +519,54 @@ button.main-button {
 
 button.main-button:hover {
   background-color: #005f99;
+}
+
+.learn-more {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.learn-more .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #005f99;
+}
+
+.learn-more .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #333333;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 3rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.card .info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card .info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bottom-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
