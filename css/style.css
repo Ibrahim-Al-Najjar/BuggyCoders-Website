@@ -11,7 +11,7 @@
 header {
   background-color: #212121;
   width: 100%;
-  position: fixed;
+  position: sticky;
   z-index: 999;
   display: flex;
   justify-content: space-between;
@@ -48,6 +48,10 @@ header {
 
 .navigation a:hover {
   color: coral;
+}
+.navigation a.active {
+  color: coral;
+  font-weight: bold;
 }
 
 section {
@@ -105,12 +109,14 @@ section {
   border-radius: 15px;
   margin-bottom: 40px;
   transition: 0.7s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 
 .main-button i {
   margin-left: 8px; 
   transition: transform 0.3s ease; 
+   transform: scale(1.1);
 }
 
 .main-button:hover i {
@@ -126,6 +132,8 @@ section {
   color: #fff;
   font-size: 1.7em;
   padding-right: 30px;
+  transition: transform 0.3s ease;
+   transform: scale(1.2);
 }
 
 .title {
@@ -338,6 +346,16 @@ section {
   .content {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
   }
 }
 
@@ -570,3 +588,13 @@ button.main-button:hover {
   justify-content: center;
   gap: 20px;
 }
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'YOUR_TRACKING_ID');
+</script>
