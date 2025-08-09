@@ -145,6 +145,7 @@ section {
 }
 
 .content {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -312,6 +313,22 @@ section {
   padding: 0 12px 0 0;
 }
 
+/* Sticky footer layout */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer.footer {
+  margin-top: auto;
+}
+
 @media (max-width: 1023px) {
   header {
     padding: 12px 20px;
@@ -447,7 +464,7 @@ section {
   }
 }
 
-.about .content {
+.about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -462,12 +479,10 @@ section {
 .about-text {
   order: 1;
   max-width: 600px;
-  font-size: 1rem;
-  line-height: 1.6;
   color: #fff;
   text-align: left;
-  margin-right: auto;
-  margin-bottom: 20px;
+  height: fit-content;
+  margin-bottom: 40px;
 }
 
 about-text p {
